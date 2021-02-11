@@ -207,7 +207,7 @@ bool table::search_name(string keyname, string keypassword)
 void table::firsttest()
 {
 	cout << "Legal" << endl;
-	cout << "Userid	" << "Password	" << "Result" << endl;
+	cout << "Userid   " << "Password " << "Result" << endl;
 	ifstream input;
 	string testname, rawpassword, testpassword;
 	int i=0;
@@ -222,10 +222,10 @@ void table::firsttest()
 		//test using the search function
 		i++;
 		if (testbit) {
-			cout << testname << "	" << testpassword << "	match" << endl;
+			cout << testname <<" " << testpassword << " match" << endl;
 		}
 		else {
-			cout << testname << "	" << testpassword << "	no match" << endl;
+			cout << testname << " " << testpassword << " no match" << endl;
 		}
 	}
 	if (input.eof()||i>5) {
@@ -236,7 +236,7 @@ void table::firsttest()
 void table::secondtest()
 {
 	cout << "Illegal" << endl;
-	cout << "Userid	" << "Password	" << "Result" << endl;
+	cout << "Userid	" << "Password " << "Result" << endl;
 	ifstream input;
 	string testname, rawpassword, testpassword;
 	int i = 0;
@@ -251,10 +251,10 @@ void table::secondtest()
 		bool testbit = search_name(testname, testpassword);
 		i++;
 		if (testbit) {
-			cout << testname << "	" << testpassword << "	match" << endl;
+			cout << testname << " " << testpassword << " match" << endl;
 		}
 		else {
-			cout << testname << "	" << testpassword << "	no match" << endl;
+			cout << testname << " " << testpassword << " no match" << endl;
 		}
 	}
 	if (input.eof() || i > 5) {
